@@ -23,7 +23,7 @@ async def new_bet(ctx, *args):
 
     # Google Sheets API setup
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    creds = ServiceAccountCredentials.from_json_keyfile_name('C:/Users/bgram/OneDrive/Documents/Programming Projects/Python/bet-tracker-406017-e3cf07acce59.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name('[REDACTED].json', scope)
     client = gspread.authorize(creds)
 
     # Open the Google Spreadsheet using its title
@@ -62,7 +62,7 @@ async def update_bet(ctx, *args):
 
     # Google Sheets API setup
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    creds = ServiceAccountCredentials.from_json_keyfile_name('C:/Users/bgram/OneDrive/Documents/Programming Projects/Python/bet-tracker-406017-e3cf07acce59.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name('[REDACTED]', scope)
     client = gspread.authorize(creds)
 
     # Open the Google Spreadsheet using its title
@@ -91,7 +91,7 @@ async def check_bet(ctx, *args):
 
     # Google Sheets API setup
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    creds = ServiceAccountCredentials.from_json_keyfile_name('C:/Users/bgram/OneDrive/Documents/Programming Projects/Python/bet-tracker-406017-e3cf07acce59.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name('[REDACTED]', scope)
     client = gspread.authorize(creds)
 
     # Open the Google Spreadsheet using its title
@@ -137,4 +137,4 @@ async def check_bet(ctx, *args):
 # Add username 
 
 # Run the bot
-bot.run('MTE3NzI5MzQyNDg4MjM1MjE2OA.GTNFJn.do4ytgMBfu2zqw4JS_9FNlnBWucnh7f289ohJE')
+bot.run('[REDACTED]')
